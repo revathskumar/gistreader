@@ -1,5 +1,6 @@
 extends layout
 
 block content
-  each html in htmlContents
+  each html, filename in htmlContents
+    h4= filename
     != html

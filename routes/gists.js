@@ -17,10 +17,10 @@ router.get('/:id', function(req, res, next){
       next(new Error('failed to load gist'));
       return;
     }
-    var htmlContents = [];
+    var htmlContents = {};
     Object.keys(gist['files']).forEach(function(filename) {
       if (gist['files'][filename]['language'] == 'Markdown') {
-        htmlContents.push(parseMarkdown(gist['files'][filename]['content']));
+        htmlContents[filename] = parseMarkdown(gist['files'][filename]['content']);
       }
     });
     res.render('show', {htmlContents: htmlContents});
