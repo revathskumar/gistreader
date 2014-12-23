@@ -3,6 +3,11 @@ var router  = express.Router();
 var parseMarkdown = require('marked');
 var github = require('octonode');
 
+/* GET home page. */
+router.get('/', function(req, res) {
+  res.render('index', { title: 'Express' });
+});
+
 router.get('/:id', function(req, res, next){
   var client = github.client();
   var gistApi = client.gist();
