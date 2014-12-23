@@ -3,5 +3,22 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
   body
-    block content
+    div.container
+      div.header
+        ul.nav.nav-pills.pull-right
+          li.active
+            a(href="#") Home
+          li
+            a(href="#") About
+          li
+            a(href="#") Contact
+        h3.text-muted Gist View
+
+      div.jumbotron
+        block content
+
+      div.footer
+        p ♥ from the Yeoman team
+
