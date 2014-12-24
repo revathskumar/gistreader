@@ -3,6 +3,29 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h4 {
+  font-size: 21.5px;
+}
+
+li {
+  line-height: 26px;
+}
+
 a {
   color: #00B7FF;
+}
+
+.jumbotron {
+  font-size: 24px;
+  font-family: "Georgia", "Cambria","Times New Roman",Times,serif;
+  line-height: 1.5;
+}
+
+blockquote p {
+  font-size: 20.5px;
+}
+
+pre code {
+  font-size: 17px;
+  line-height: 1.5;
 }
