@@ -1,3 +1,11 @@
-.nav. footer {
+.container {
+  width: 950px;
+}
+
+body {
+  padding: 50px;
+}
+
+.nav, footer {
   display: none;
 }
