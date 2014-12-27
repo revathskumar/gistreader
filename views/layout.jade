@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= title
+    title Gist Reader
     link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', media='print', href='/stylesheets/print.css')
@@ -10,16 +10,16 @@ html
       div.header
         ul.nav.nav-pills.pull-right
           li.active
-            a(href="#") Home
+            a(href="/") Home
           li
-            a(href="#") About
+            a(href="#about") About
           li
-            a(href="#") Contact
-        h3.text-muted Gist View
+            a(href="#contact") Contact
+        a.site(href="/") <h3 class="text-muted"> Gist Reader </h3>
 
       div.files
         block content
 
       div.footer
-        p ♥ from the Yeoman team
+        p Made with ♥ by <a href="http://github.com/revathskumar">@revathskumar</a>
 
