@@ -10,7 +10,7 @@
 
     `git clone git@github.com:revathskumar/gistreader.git`
 
-* Install npm and bower dependencies
+* Install npm dependencies
 
     `npm install`
 
