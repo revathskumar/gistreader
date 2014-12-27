@@ -46,3 +46,15 @@ pre code {
   font-size: 17px;
   line-height: 1.5;
 }
+
+.site:hover {
+  text-decoration: none;
+}
+
+.index {
+  font-size: 18px;
+}
+
+.footer {
+  margin-top: 10px;
+}

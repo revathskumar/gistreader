@@ -1,5 +1,27 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.index
+    | View your markdown gists in readable and printable format. Inspired by <a href="http://gist.io">gist.io</a>.
+
+    h3 Usage
+    ul
+      li Find the gist id from public gist url.
+      li Append gist id to <code>http://gistreader.herokuapp.com/</code>.
+
+    h3 Example
+    | For the gist <a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">
+    | https://gist.github.com/staltz/868e7e9bc2a7b8c1f754</a> the gist id is
+    |  <code>868e7e9bc2a7b8c1f754</code>. Now you can read this on
+    |  <a href="http://gistreader.herokuapp.com/868e7e9bc2a7b8c1f754">http://gistreader.herokuapp.com/868e7e9bc2a7b8c1f754</a>
+
+    h3#about About
+    | Since <a href="http://gist.io">gist.io</a> doesn't work with new gist urls, I came up  with my on solution to
+    | read and print gists in markdown.
+
+    h3#contact Contact
+    | You can contact me on
+    ul
+      li Twitter : <a href="http://twitter.com/revathskumar">@revathskumar</a>
+      li Github : <a href="http://github.com/revathskumar">@revathskumar</a>
+      li Email : <a href="mailto:rsk@revathskumar.com">rsk@revathskumar.com</a>
