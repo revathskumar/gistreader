@@ -14,7 +14,7 @@
 
     `npm install`
 
-* start gulp server
+* start server
 
     `nodemon bin/www`
 
